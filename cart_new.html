@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreyB</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/lightslider.css">
+    <link rel="stylesheet" href="/assets/font/icofont/icofont.min.css">
+    <link rel="stylesheet" href="/assets/font/fontello/css/next.css">
+    <link rel="icon" href="/assets/font/Icon/ia_300000109.png" type="image" sizes="16x16">
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header grid wide">
+                <div class="row">
+                    <div class="header-logo col l-2 c-2 m-2">
+                        <a href="">
+                            <img class="header_logo" src="/assets/font/Icon/ia_300000109.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-phones col l-3 c-3 m-3">
+                        <div class="circle-icon">
+                            <img class="icons-header" src="/assets/font/Icon/phone-8x.png" alt="">
+                        </div>
+                        <div class="header-phone">
+                            <h3>hỗ trợ gọi ngay</h3>
+                            <a href="">0988.62.3060</a>
+                        </div>
+                    </div>
+                    <div class="header-address col l-5 c-5 m-5">
+                        <div class="circle-icon">
+                            <img class="icons-header" src="/assets/font/Icon/map.png" alt="">
+                        </div>
+                        <div class="header__address">
+                            <h3>địa chỉ liên hệ</h3>
+                            <a href="">370 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội</a>
+                        </div>
+                    </div>
+                    <div class="header-like-login-cart col l-2 c-2 m-2">
+                        <div class="icon-header">
+                            <img src="/assets/font/Icon/heart-regular.svg" alt="">
+                            <span>0</span>
+                        </div>
+                        <div class="icon-header">
+                            <img src="/assets/font/Icon/user-regular.png" alt="">
+                        </div>
+                        <div class="icon-header cart">
+                            <img src="/assets/font/Icon/cart-best.png" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Begin: Nav -->
+        <div id="nav">
+            <div class="grid wide">
+                <div class="row ">
+                    <div class="mobile-left-nav col c-3 m-3">
+                        <input type="checkbox" id="show-menu">
+                        <label for="show-menu" class="menu-icon"><i
+                                class="icofont-navigation-menu icofont-2x"></i></label>
+                        <a href="#" class="user-mobile">
+                            <!-- <div class="icon-header">
+                                <img src="/assets/font/Icon/heart_white.png" alt="">
+                            </div> -->
+                            <img src="/assets/font/Icon/user-regular-white.png" alt="">
+                        </a>
+                        <ul class="nav-mobile">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <a href="" class="mobile-link">Sneakers</a>
+                                <input type="checkbox" id="show-sneakers">
+                                <label class=" label" for="show-sneakers"></label>
+                                <ul class="subnav">
+                                    <li><a href="">Converse</a></li>
+                                    <li><a href="">Vans</a></li>
+                                    <li><a href="">New Balance</a></li>
+                                    <li><a href="">Puma</a></li>
+                                    <li><a href="">Slipper</a></li>
+                                    <li><a href="">Fla+MLB</a></li>
+                                    <li><a href="">Kid Shoes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Backpacks</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li class="animation">
+                                <a href="" class="mobile-link">Sale</a>
+                                <input type="checkbox" id="show-sale">
+                                <label class=" label" for="show-sale"></label>
+                                <ul class="subnav">
+                                    <li><a href="">Vans</a></li>
+                                    <li><a href="">Converse</a></li>
+                                    <li><a href="">New Balance</a></li>
+                                    <li><a href="">Puma</a></li>
+                                    <li><a href="">Sale Other</a></li>
+                                    <li><a href="">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Collections</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav col l-9-5">
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="" class="desktop-link">Sneakers</a>
+                            <ul class="subnav">
+                                <li><a href="">Converse</a></li>
+                                <li><a href="">Vans</a></li>
+                                <li><a href="">New Balance</a></li>
+                                <li><a href="">Puma</a></li>
+                                <li><a href="">Slipper</a></li>
+                                <li><a href="">Fla+MLB</a></li>
+                                <li><a href="">Kid Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Backpacks</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li class="animation">
+                            <a href="" class="desktop-link">Sale</a>
+                            <ul class="subnav">
+                                <li><a href="">Vans</a></li>
+                                <li><a href="">Converse</a></li>
+                                <li><a href="">New Balance</a></li>
+                                <li><a href="">Puma</a></li>
+                                <li><a href="">Sale Other</a></li>
+                                <li><a href="">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Collections</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                    <div class="mobile-between-nav col c-6 m-6">
+                        <a href="">
+                            <img src="/assets/font/Icon/grebwhite.png" alt="">
+                        </a>
+                    </div>
+                    <!-- Begin:Search button -->
+                    <div class="mobile-right-nav col c-3 m-3">
+                        <a href="#" class="cart-mobile">
+                            <!-- <div class="icon-header">
+                                <img src="/assets/font/Icon/heart_white.png" alt="">
+                            </div> -->
+                            <img src="/assets/font/Icon/cart-best-white.png" alt="">
+                            <span>0</span>
+                        </a>
+                        <input type="checkbox" id="show-search">
+                        <label for="show-search" class="search-icon"><i class="icofont-search-1 icofont-1x"></i></label>
+                        <form action="" class="search-button-mobile col l-2-5">
+                            <table class="elementsnav">
+                                <tr>
+                                    <td>
+                                        <input class="search" type="text" placeholder="Tìm kiếm">
+                                    </td>
+                                    <td class="search-pc">
+                                        <button type="submit" class="go-icon">
+                                            <a href=""><i class="icon-search-1"></i></a>
+                                        </button>
+                                    </td>
+                                    <td class="search-mobile">
+                                        <button type="submit" class="go-icon">
+                                            <a href=""><i class="icofont-search-1 icofont-1x"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <form action="" class="search-button col l-2-5">
+                        <table class="elementsnav">
+                            <tr>
+                                <td>
+                                    <input class="search" type="text" placeholder="Tìm kiếm">
+                                </td>
+                                <td class="search-pc">
+                                    <button type="submit" class="go-icon">
+                                        <a href=""><i class="icon-search-1"></i></a>
+                                    </button>
+                                </td>
+                                <td class="search-mobile">
+                                    <button type="submit" class="go-icon">
+                                        <a href=""><i class="icofont-search-1 icofont-1x"></i></a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <!-- End:Search button  -->
+            </div>
+        </div>
+        <!-- End: Nav -->
+        <div id="slider">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000013.jpg" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000014.jpg" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000015.jpg" style="width:100%">
+                </div>
+          
+                <!-- Next and previous buttons -->
+                <button class="owl-prev icon-angle-left" onclick="plusSlides(-1)"></button>
+                <button class="owl-next icon-angle-right" onclick="plusSlides(1)"></button>
+                
+            </div>
+        </div>
+        <div id="content_cart">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="content_cart">
+                        <div class="breadcrumb-wrapp col l-12 c-12 m-12">
+                            <ul class="breadcrumb-cate">
+                                <li>
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a class="no-spacing" href="#">Giỏ hàng của bạn</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="page-title">
+                                <h1 class="title-head">Giỏ hàng của bạn</h1>
+                                <p>Có <span style="font-weight: 600">2</span> sản phẩm trong giỏ hàng</p>
+                            </div>
+                            <div class="col l-8 right_cart">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="tt">
+                                            <td class="image">Hình ảnh</td>
+                                            <td class="infoTable">Thông tin</td>
+                                            <td>Số lượng</td>
+                                            <td>Giá tiền</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="wishlist-row40" class="cart">
+                                        <tr class="idProduct" data-id="29234678" data-storeid="25943">
+                                            <td class="imageWislist">
+                                                <a href="/vans-sk8-flame-purple-40.5-p29234678.html">
+                                                    <img src="https://storage.googleapis.com/cdn.nhanh.vn/store/25943/ps/20210313/IMG_1522.JPG"
+                                                        alt="Vans Sk8 Flame Purple - 40.5">
+                                                </a>
+                                            </td>
+                                            <td class="nameWislist">
+                                                <a href="/vans-sk8-flame-purple-40.5-p29234678.html">Vans Sk8 Flame Purple - 40.5</a>
+                                                <a class="btn-buyNow quickView" data-id="29234670"
+                                                    data-handle="/vans-sk8-flame-purple-40.5-p29234678.html">Xem lại</a>
+                                            </td>
+                                            <td class="quantityProduct">
+                                                <div class="input-groupBtn">
+                                                    <button data-id="29234678" class="btn-minus btnAction" type="button">-</button>
+                                                    <input maxlength="1" disabled="" class="form-control js-quantity-product number-sidebar"
+                                                        name="Lines" value="1" data-id="29234678" type="number">
+                                                    <button data-id="29234678" class="btn-plus btnAction" type="button">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="priceWislist">
+                                                    <span class="priceNew onlyPrice tp_product_price">1,350,000đ</span>
+                                                </div>
+                                            </td>
+                                            <td class="actitonWislist">
+                                                <a class="remove-item-cart" data-id="29234678" href="javascript:"><i class="icofont-close-line"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="idProduct" data-id="29234678" data-storeid="25943">
+                                            <td class="imageWislist">
+                                                <a href="/vans-sk8-flame-purple-40.5-p29234678.html">
+                                                    <img src="https://storage.googleapis.com/cdn.nhanh.vn/store/25943/ps/20210313/IMG_1522.JPG"
+                                                        alt="Vans Sk8 Flame Purple - 40.5">
+                                                </a>
+                                            </td>
+                                            <td class="nameWislist">
+                                                <a href="/vans-sk8-flame-purple-40.5-p29234678.html">Vans Sk8 Flame Purple - 40.5</a>
+                                                <a class="btn-buyNow quickView" data-id="29234670"
+                                                    data-handle="/vans-sk8-flame-purple-40.5-p29234678.html">Xem lại</a>
+                                            </td>
+                                            <td class="quantityProduct">
+                                                <div class="input-groupBtn">
+                                                    <button data-id="29234678" class="btn-minus btnAction" type="button">-</button>
+                                                    <input maxlength="1" disabled="" class="form-control js-quantity-product number-sidebar"
+                                                        name="Lines" value="1" data-id="29234678" type="number">
+                                                    <button data-id="29234678" class="btn-plus btnAction" type="button">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="priceWislist">
+                                                    <span class="priceNew onlyPrice tp_product_price">1,350,000đ</span>
+                                                </div>
+                                            </td>
+                                            <td class="actitonWislist">
+                                                <a class="remove-item-cart" data-id="29234678" href="javascript:"><i class="icofont-close-line"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="idProduct" data-id="29234678" data-storeid="25943">
+                                            <td class="imageWislist">
+                                                <a href="/vans-sk8-flame-purple-40.5-p29234678.html">
+                                                    <img src="https://storage.googleapis.com/cdn.nhanh.vn/store/25943/ps/20210313/IMG_1522.JPG"
+                                                        alt="Vans Sk8 Flame Purple - 40.5">
+                                                </a>
+                                            </td>
+                                            <td class="nameWislist">
+                                                <a href="/vans-sk8-flame-purple-40.5-p29234678.html">Vans Sk8 Flame Purple - 40.5</a>
+                                                <a class="btn-buyNow quickView" data-id="29234670"
+                                                    data-handle="/vans-sk8-flame-purple-40.5-p29234678.html">Xem lại</a>
+                                            </td>
+                                            <td class="quantityProduct">
+                                                <div class="input-groupBtn">
+                                                    <button data-id="29234678" class="btn-minus btnAction" type="button">-</button>
+                                                    <input maxlength="1" disabled="" class="form-control js-quantity-product number-sidebar"
+                                                        name="Lines" value="1" data-id="29234678" type="number">
+                                                    <button data-id="29234678" class="btn-plus btnAction" type="button">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="priceWislist">
+                                                    <span class="priceNew onlyPrice tp_product_price">1,350,000đ</span>
+                                                </div>
+                                            </td>
+                                            <td class="actitonWislist">
+                                                <a class="remove-item-cart" data-id="29234678" href="javascript:"><i class="icofont-close-line"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="content_cart_mobile grid wide">
+                                <div class="listProductWislist row ">
+                                    <div class="idProduct">
+                                        <div class="wislistItem row">
+                                            <div class="img_product_cart col c-3 m-5 sm-5">
+                                                <a href=""><img src="/assets/img/All_Img/Sale1.jpg" alt=""
+                                                        class="img__product"></a>
+                                            </div>
+                                            <div class="content_product_cart col c-9 m-7 sm-7">
+                                                <a href="" class="productname">
+                                                    <h1>Vans Authentic</h1>
+                                                </a>
+                                                <h3 class="size">- 43</h3>
+                                                <h3 class="count"><input value="1" type="number"></h3>
+                                                <h3 class="total">1,050,000 đ</h3>
+                                                <a class="delete" href="">Xóa</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="totals" class="col l-4 c-12 m-12 left_cart">
+                                <div class="orderWrapp">
+                                    <div class="each-row">
+                                        <h3>Tóm tắt đơn hàng</h3>
+                                    </div>
+                                    <div class="each-row">
+                                        <div class="box-style">
+                                            <span class="text-label">Tạm tính: </span>
+                                            <strong class="totals">2,800,000đ</strong>
+                                        </div>
+                                    </div>
+                                    <div class="each-row">
+                                        <div class="box-style">
+                                            <span class="text-label" style="font-weight: 600">Tổng tiền: </span>
+                                            <strong class="totals1">2,800,000đ</strong>
+                                        </div>
+                                    </div>
+                                    <div class="each-row">
+                                        <a class="btn-large btn-checkout" title="Tiến hành đặt hàng" href="/cart/checkout">Tiến hành đặt hàng</a>
+                                        <a class="btn-large btn-buy" title="Mua thêm sản phẩm" href="/">Mua thêm sản phẩm</a>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="row-2">
+                    <div class="related-products list-product">
+                        <div class="title">
+                            <h2>Sản phẩm đã xem</h2>
+                        </div>
+                        <ul id="responsive2"
+                            class="gallery content-slider list-unstyled clearfix lightSlider lSSlide lsGrab">
+                            <li class="lslide">
+                                <div class="product-item col l-12 c-12 m-12 sm-12">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="lslide">
+                                <div class="product-item col l-12 c-12 m-12 sm-12">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>63 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="lslide">
+                                <div class="product-item col l-12 c-12 m-12 sm-12">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>64 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="lslide">
+                                <div class="product-item col l-12 c-12 m-12 sm-12">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>65 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="lslide">
+                                <div class="product-item col l-12 c-12 m-12 sm-12">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>66 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="lslide">
+                                <div class="product-item col l-12 c-12 m-12 sm-12">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>67 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="grid wide">
+                <div class="footer-content row sm-gutter">
+                    <div class="column column1 col l-3 c-12 m-12 sm-12">
+                        <a href="">
+                            <img class="logo-footer" src="/assets/font/Icon/ICON Black.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="/assets/font/Icon/map white.png" alt="">
+                            <h2>370 Thái Hà, P. Trung Liệt, Q.Đống Đa, Hà Nội</h2>
+                        </a>
+                        <a class="footer__email" href="">
+                            <img class="email" src="/assets/font/Icon/Email white.png" alt="">
+                            <h2>greybear1412@gmail.com</h2>
+                        </a>
+                        <a href="">
+                            <img src="/assets/font/Icon/phone white.png" alt="">
+                            <h2>0988.62.3060</h2>
+                        </a>
+                    </div>
+                    <div class="column column2 col l-2 c-12 m-12 sm-12">
+                        <h1>HỖ TRỢ</h1>
+                        <ul>
+                            <li><a href="">Kiểm tra đơn hàng</a></li>
+                            <li><a href="">Đăng nhập</a></li>
+                            <li><a href="">Đăng ký</a></li>
+                            <li><a href="">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="column column3 col l-2-5 c-12 m-12 sm-12">
+                        <h1>CHÍNH SÁCH</h1>
+                        <ul>
+                            <li><a href="/chinh-sach-giao-hang-n82741.html">Chính sách vận chuyển</a></li>
+                            <li><a href="/chinh-sach-doi-hang-n48540.html">Chính sách đổi trả</a></li>
+                            <li><a href="/chinh-sach-thanh-toan-n82742.html">Chính sách thanh toán</a></li>
+                            <li><a href="/huong-dan-mua-hang-online-n82740.html">Quy định sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="column column4 col l-2-5 c-12 m-12 sm-12">
+                        <h1>GỬI EMAIL</h1>
+                        Gửi email nhận khuyến mãi
+                        <form class="input-email" action="">
+                            <input type="email" name="email" class="text-input">
+                            <button type="submit"><img src="/assets/font/Icon/paper plane.png" alt=""></button>
+                        </form>
+                    </div>
+                    <div class="column column5 col l-2">
+                        <h1>KẾT NỐI</h1>
+                        <ul>
+                            <li><a href=""><img src="/assets/font/Icon/Facebook White.png" alt=""></a></li>
+                            <li><a href=""><img src="/assets/font/Icon/Youtube White.png" alt=""></a></li>
+                            <li><a href=""><img src="/assets/font/Icon/Instagram white.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="/assets/js/lightslider.js"></script>
+    <script src="/assets/js/slider.js"></script>
+</body>
+
+</html>
+<!-- ================Done -->

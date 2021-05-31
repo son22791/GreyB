@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/grid.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <link rel="stylesheet" href="/assets/font/icofont/icofont.min.css">
+        <link rel="stylesheet" href="/assets/font/fontello/css/next.css">
+        <link rel="icon" href="/assets/font/Icon/ia_300000109.png" type="image" sizes="16x16">
+        <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="checkout">
+        <div class="grid wide">
+            <div class="container">
+                <form action="" id="form-checkout" class="row">
+                    <div class="main-checkout col l-8 c-12 m-12">
+                        <div class="main-header">
+                            <a href="index.html">
+                                <img src="/assets/font/Icon/ia_300000109.png" alt="Logo" class="logo">
+                            </a>
+                            <div class="breadcrumb-wrapp col l-12 c-12 m-12">
+                                <ul class="breadcrumb-cate">
+                                    <li>
+                                        <a href="">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a class="no-spacing" href="#">Thanh toán</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <div class="section-header">
+                                <h2>Thông tin giao hàng</h2>
+                            </div>
+                            <div class="section-content">
+                                <div class="infor-cus">
+                                    <h3>1. Nhập thông tin</h3>
+                                    <p>Bạn có đã tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+                                </div>
+                                <div class="input-infor">
+                                    <div class="input-infor-name">
+                                        <input type="text" name="fullname" id="fullname" placeholder="Họ và tên">
+                                    </div>
+                                    <div class="input-infor-email">
+                                        <input type="email" name="email" id="email" placeholder="Email">
+                                        <input type="tel" name="tel" id="tel" placeholder="Số điện thoại">
+                                    </div>
+                                    <div class="input-infor-address">
+                                        <input type="text" name="address" id="address" placeholder="Địa chỉ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-notice">
+                                <div class="input-notice">
+                                    <h3>Ghi chú đơn hàng</h3>
+                                    <textarea name="description" id="cus-description" cols="30" rows="5" placeholder="Ghi chú"></textarea>
+                                </div>
+                            </div>
+                            <div class="section-payment-method">
+                                <div class="infor-cus">
+                                    <h3>2. Chọn hình thức giao hàng</h3>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="method-cod">
+                                        <label for="radio1" class="radio-label">
+                                            <div class="radio-input">
+                                                <input type="radio" name="paymentMethod">
+                                            </div>
+                                            <img src="assets/font/Icon/Vector.png" alt="">
+                                            <div class="radio-primary">
+                                                <span>Thanh toán khi nhận hàng (COD)</span>
+                                                <p>Miễn phí vận chuyển cho mọi đơn hàng trên 2.000.000đ</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="method-banking">
+                                        <label for="radio2" class="radio-label">
+                                            <div class="radio-input">
+                                                <input type="radio" name="paymentMethod">
+                                            </div>
+                                            <img src="assets/font/Icon/Vector2.png" alt="">
+                                            <div class="radio-primary">
+                                                <span>Thanh toán chuyển khoản</span>
+                                            </div>
+                                        </label>
+                                    </div>                        
+                                </div>
+                            </div>
+                            <button class="submit" type="submit">Đặt hàng</button>
+                            <div class="section-footer">
+                                <a href="cart.html">QUAY LẠI GIỎ HÀNG</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-summary-info col l-4 c-12 m-12">
+                        <div class="cart-info-content">
+                            <div class="infoCus">
+                                <h3>Giỏ hàng của bạn</h3>
+                            </div>
+                            <div class="product-table">
+                                <div class="product-img">
+                                    <img src="/assets/img/Product detail/ia_100000038.jpg" alt="Vans Old Skool">
+                                </div>
+                                <div class="product-description">
+                                    <span>Vans Old Skool</span>
+                                    <span>-37</span>
+                                </div>
+                                <div class="product-prices">
+                                    <strong>1,200,000đ</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-discount">
+                            <div class="discount-content">
+                                <div class="discount-code">
+                                    <input type="text" class="input-code" placeholder="Nhập mã giảm giá">
+                                    <button class="apply-code">Áp dụng</button>
+                                </div>
+                                <div class="order-summary">
+                                    <div>
+                                        <h3>Tóm tắt đơn hàng</h3>
+                                    </div>
+                                    <div class="order-box">
+                                        <span>Tạm tính:</span>
+                                        <strong class="totals-price1">1,200,000đ</strong>
+                                    </div>
+                                    <div class="order-box">
+                                        <span>Phí giao hàng:</span>
+                                        <strong>0đ</strong>
+                                    </div>
+                                    <div class="order-box">
+                                        <span>Giảm giá:</span>
+                                        <strong>-0đ</strong>
+                                    </div>
+                                    <div class="order-box-totals">
+                                        <strong>Tổng tiền:</strong>
+                                        <strong class="totals-price2">1,200,000đ</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="noteCheckout">
+                            <p>
+                                Grey.B sẽ XÁC NHẬN đơn hàng bằng TIN NHẮN SMS hoặc GỌI ĐIỆN. Bạn vui lòng kiểm tra TIN NHẮN hoặc NGHE MÁY ngay khi đặt hàng thành công và CHỜ NHẬN HÀNG
+                            </p>
+                        </div>
+                        <button class="submit" type="submit">Đặt hàng</button>
+                        <div class="section-footer-mobile">
+                            <a href="cart.html">QUAY LẠI GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

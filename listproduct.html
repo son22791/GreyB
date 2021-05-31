@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreyB</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/font/icofont/icofont.min.css">
+    <link rel="stylesheet" href="/assets/font/fontello/css/next.css">
+    <link rel="icon" href="/assets/font/Icon/ia_300000109.png" type="image" sizes="16x16">
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header grid wide">
+                <div class="row">
+                    <div class="header-logo col l-2 c-2 m-2">
+                        <a href="">
+                            <img class="header_logo" src="/assets/font/Icon/ia_300000109.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-phones col l-3 c-3 m-3">
+                        <div class="circle-icon">
+                            <img class="icons-header" src="/assets/font/Icon/phone-8x.png" alt="">
+                        </div>
+                        <div class="header-phone">
+                            <h3>hỗ trợ gọi ngay</h3>
+                            <a href="">0988.62.3060</a>
+                        </div>
+                    </div>
+                    <div class="header-address col l-5 c-5 m-5">
+                        <div class="circle-icon">
+                            <img class="icons-header" src="/assets/font/Icon/map.png" alt="">
+                        </div>
+                        <div class="header__address">
+                            <h3>địa chỉ liên hệ</h3>
+                            <a href="">370 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội</a>
+                        </div>
+                    </div>
+                    <div class="header-like-login-cart col l-2 c-2 m-2">
+                        <div class="icon-header">
+                            <img src="/assets/font/Icon/heart-regular.svg" alt="">
+                            <span>0</span>
+                        </div>
+                        <div class="icon-header">
+                            <img src="/assets/font/Icon/user-regular.png" alt="">
+                        </div>
+                        <div class="icon-header cart">
+                            <img src="/assets/font/Icon/cart-best.png" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Begin: Nav -->
+        <div id="nav">
+            <div class="grid wide">
+                <div class="row ">
+                    <div class="mobile-left-nav col c-3 m-3">
+                        <input type="checkbox" id="show-menu">
+                        <label for="show-menu" class="menu-icon"><i class="icofont-navigation-menu icofont-2x"></i></label>
+                        <a href="#" class="user-mobile">
+                            <!-- <div class="icon-header">
+                                <img src="/assets/font/Icon/heart_white.png" alt="">
+                            </div> -->
+                                <img src="/assets/font/Icon/user-regular-white.png" alt="">
+                        </a>
+                        <ul class="nav-mobile">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <a href="" class="mobile-link">Sneakers</a>
+                                <input type="checkbox" id="show-sneakers">
+                                <label class=" label" for="show-sneakers"></label>
+                                <ul class="subnav">
+                                    <li><a href="">Converse</a></li>
+                                    <li><a href="">Vans</a></li>
+                                    <li><a href="">New Balance</a></li>
+                                    <li><a href="">Puma</a></li>
+                                    <li><a href="">Slipper</a></li>
+                                    <li><a href="">Fla+MLB</a></li>
+                                    <li><a href="">Kid Shoes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Backpacks</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li class="animation">
+                                <a href="" class="mobile-link">Sale</a>
+                                <input type="checkbox" id="show-sale">
+                                <label class=" label" for="show-sale"></label>
+                                <ul class="subnav">
+                                    <li><a href="">Vans</a></li>
+                                    <li><a href="">Converse</a></li>
+                                    <li><a href="">New Balance</a></li>
+                                    <li><a href="">Puma</a></li>
+                                    <li><a href="">Sale Other</a></li>
+                                    <li><a href="">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Collections</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav col l-9-5">
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="" class="desktop-link">Sneakers</a>
+                            <ul class="subnav">
+                                <li><a href="">Converse</a></li>
+                                <li><a href="">Vans</a></li>
+                                <li><a href="">New Balance</a></li>
+                                <li><a href="">Puma</a></li>
+                                <li><a href="">Slipper</a></li>
+                                <li><a href="">Fla+MLB</a></li>
+                                <li><a href="">Kid Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Backpacks</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li class="animation">
+                            <a href="" class="desktop-link">Sale</a>
+                            <ul class="subnav">
+                                <li><a href="">Vans</a></li>
+                                <li><a href="">Converse</a></li>
+                                <li><a href="">New Balance</a></li>
+                                <li><a href="">Puma</a></li>
+                                <li><a href="">Sale Other</a></li>
+                                <li><a href="">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Collections</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                    <div class="mobile-between-nav col c-6 m-6">
+                        <a href="">
+                            <img src="/assets/font/Icon/grebwhite.png" alt="">
+                            </a>
+                    </div>
+                    <!-- Begin:Search button -->
+                    <div class="mobile-right-nav col c-3 m-3">
+                        <a href="#" class="cart-mobile">
+                            <!-- <div class="icon-header">
+                                <img src="/assets/font/Icon/heart_white.png" alt="">
+                            </div> -->
+                                <img src="/assets/font/Icon/cart-best-white.png" alt="">
+                        </a>
+                        <input type="checkbox" id="show-search">
+                        <label for="show-search" class="search-icon"><i class="icofont-search-1 icofont-1x"></i></label>
+                        <form action="" class="search-button-mobile col l-2-5">
+                            <table class="elementsnav">
+                                <tr>
+                                    <td>
+                                        <input class="search" type="text" placeholder="Tìm kiếm">
+                                    </td>
+                                    <td class="search-pc">
+                                        <button type="submit" class="go-icon">
+                                            <a href=""><i class="icon-search-1"></i></a>
+                                        </button>
+                                    </td>
+                                    <td class="search-mobile">
+                                        <button type="submit" class="go-icon">
+                                            <a href=""><i class="icofont-search-1 icofont-1x"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <form action="" class="search-button col l-2-5">
+                        <table class="elementsnav">
+                            <tr>
+                                <td>
+                                    <input class="search" type="text" placeholder="Tìm kiếm">
+                                </td>
+                                <td class="search-pc">
+                                    <button type="submit" class="go-icon">
+                                        <a href=""><i class="icon-search-1"></i></a>
+                                    </button>
+                                </td>
+                                <td class="search-mobile">
+                                    <button type="submit" class="go-icon">
+                                        <a href=""><i class="icofont-search-1 icofont-1x"></i></a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <!-- End:Search button  -->
+            </div>
+        </div>
+        <!-- End: Nav -->
+        <div id="slider">
+            <div class="slider">
+                <div class="img-box">
+                    <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/ia_300000013.jpg"
+                        class="slider-img">
+                </div>
+            </div>
+            <button class="owl-prev icon-angle-left" onclick="prev()"></button>
+            <button class="owl-next icon-angle-right" onclick="next()"></button>
+        </div>
+        <div id="content">
+            <div class="category-product">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="breadcrumb-wrapp col l-12 c-12 m-12">
+                            <ul class="breadcrumb-cate">
+                                <li>
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a class="no-spacing" href="">SNEAKERS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="title col l-12 ">
+                            <h2>SNEAKERS</h2>
+                        </div>
+                        <div class="left-content col l-3">
+                            <h3 class="category__heading">
+                                BỘ LỌC
+                            </h3>
+                            <li>
+                                <a href="" class="left-product-link">SẢN PHẨM</a>
+                                <input type="checkbox" id="show-product">
+                                <label class=" label" for="show-product"></label>
+                                <ul class="subnav">
+                                    <li><a href="">SLIPPERS</a>
+                                        <input type="checkbox" id="show-product-slippers">
+                                        <label class=" label" for="show-product-slippers"></label>
+                                    <ul class="subnav">
+                                        <li><a href="">GUESS</a></li>
+                                        <li><a href="">CROSS</a></li>
+                                        <li><a href="">FILA</a></li>
+                                        <li><a href="">PUMA</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="">SANDALS</a>
+
+                                    </li>
+                                    <li><a href="">SNEAKERS</a>
+                                        <input type="checkbox" id="show-product-sneakers">
+                                        <label class=" label" for="show-product-sneakers"></label>
+                                    <ul class="subnav">
+                                        <li><a href="">MLB</a></li>
+                                        <li><a href="">KID SHOES</a></li>
+                                        <li><a href="">CONVERSE</a></li>
+                                        <li><a href="">VANS</a></li>
+                                        <li><a href="">PUMA</a></li>
+                                        <li><a href="">REEBOK</a></li>
+                                        <li><a href="">NEW BALANCE</a></li>
+                                        <li><a href="">FILA</a></li>
+                                        <li><a href="">TIMBERLAND</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="">BACKPACKS</a>
+                                        <input type="checkbox" id="show-product-backpacks">
+                                        <label class=" label" for="show-product-backpacks"></label>
+                                    <ul class="subnav">
+                                        <li><a href="">KANKEN</a></li>
+                                        <li><a href="">VANS</a></li>
+                                        <li><a href="">JANSPORT</a></li>
+                                        <li><a href="">BURTON</a></li>
+                                        <li><a href="">PUMA</a></li>
+                                        <li><a href="">REEBOK</a></li>
+                                        <li><a href="">NEW BALANCE</a></li>
+                                        <li><a href="">FILA</a></li>
+                                        <li><a href="">TIMBERLAND</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="">ACCESSORIES</a></li>
+                                </ul>
+                            </li>
+                            <li id="price-product">
+                                <a href="" class="left-product-link">LỌC THEO GIÁ</a>
+                                <input type="checkbox" id="show-price-product">
+                                <label class=" label" for="show-price-product"></label>
+                                <ul class="subnav">
+                                    <li>
+                                        <input type="checkbox" id="price-product-s">
+                                        <label class=" label" for="show-price-product"></label>
+                                        <a href="">50.000 VNĐ - 200.000 VNĐ</a></li>
+                                    <li>
+                                        <input type="checkbox" id="price-product-m">
+                                        <label class=" label" for="show-price-product"></label>
+                                        <a href="">200.000 VNĐ - 600.000 VNĐ</a></li>
+                                    <li>
+                                        <input type="checkbox" id="price-product-l">
+                                        <label class=" label" for="show-price-product"></label>
+                                        <a href="">600.000 VNĐ - 1.200.000 VNĐ</a></li>
+                                    <li>
+                                        <input type="checkbox" id="price-product-xl">
+                                        <label class=" label" for="show-price-product"></label>
+                                        <a href="">1.200.000 VNĐ - 2.000.000 VNĐ</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="right-content col l-9">
+                            <div class="list-product row">
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
+                                        class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/js/slider.js"></script>
+</html>
