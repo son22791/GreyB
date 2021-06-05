@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreyB</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/font/icofont/icofont.min.css">
+    <link rel="stylesheet" href="/assets/font/fontello/css/next.css">
+    <link rel="icon" href="/assets/font/Icon/ia_300000109.png" type="image" sizes="16x16">
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="header grid wide">
+                <div class="row">
+                    <div class="header-logo col l-2 c-2 m-2">
+                        <a href="">
+                            <img class="header_logo" src="/assets/font/Icon/ia_300000109.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-phones col l-3 c-3 m-3">
+                        <div class="circle-icon">
+                            <img class="icons-header" src="/assets/font/Icon/phone-8x.png" alt="">
+                        </div>
+                        <div class="header-phone">
+                            <h3>hỗ trợ gọi ngay</h3>
+                            <a href="">0988.62.3060</a>
+                        </div>
+                    </div>
+                    <div class="header-address col l-5 c-5 m-5">
+                        <div class="circle-icon">
+                            <img class="icons-header" src="/assets/font/Icon/map.png" alt="">
+                        </div>
+                        <div class="header__address">
+                            <h3>địa chỉ liên hệ</h3>
+                            <a href="">370 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội</a>
+                        </div>
+                    </div>
+                    <div class="header-like-login-cart col l-2 c-2 m-2">
+                        <div class="icon-header">
+                            <img src="/assets/font/Icon/heart-regular.svg" alt="">
+                            <span>0</span>
+                        </div>
+                        <div class="icon-header">
+                            <img src="/assets/font/Icon/user-regular.png" alt="">
+                        </div>
+                        <div class="icon-header cart">
+                            <img src="/assets/font/Icon/cart-best.png" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Begin: Nav -->
+        <div id="nav">
+            <div class="grid wide">
+                <div class="row ">
+                    <div class="mobile-left-nav col c-3 m-3">
+                        <input type="checkbox" id="show-menu">
+                        <label for="show-menu" class="menu-icon"><i
+                                class="icofont-navigation-menu icofont-2x"></i></label>
+                        <a href="#" class="user-mobile">
+                            <!-- <div class="icon-header">
+                                <img src="/assets/font/Icon/heart_white.png" alt="">
+                            </div> -->
+                            <img src="/assets/font/Icon/user-regular-white.png" alt="">
+                        </a>
+                        <ul class="nav-mobile">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <a href="" class="mobile-link">Sneakers</a>
+                                <input type="checkbox" id="show-sneakers">
+                                <label class=" label" for="show-sneakers"></label>
+                                <ul class="subnav">
+                                    <li><a href="">Converse</a></li>
+                                    <li><a href="">Vans</a></li>
+                                    <li><a href="">New Balance</a></li>
+                                    <li><a href="">Puma</a></li>
+                                    <li><a href="">Slipper</a></li>
+                                    <li><a href="">Fla+MLB</a></li>
+                                    <li><a href="">Kid Shoes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Backpacks</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li class="animation">
+                                <a href="" class="mobile-link">Sale</a>
+                                <input type="checkbox" id="show-sale">
+                                <label class=" label" for="show-sale"></label>
+                                <ul class="subnav">
+                                    <li><a href="">Vans</a></li>
+                                    <li><a href="">Converse</a></li>
+                                    <li><a href="">New Balance</a></li>
+                                    <li><a href="">Puma</a></li>
+                                    <li><a href="">Sale Other</a></li>
+                                    <li><a href="">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Collections</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav col l-9-5">
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="" class="desktop-link">Sneakers</a>
+                            <ul class="subnav">
+                                <li><a href="">Converse</a></li>
+                                <li><a href="">Vans</a></li>
+                                <li><a href="">New Balance</a></li>
+                                <li><a href="">Puma</a></li>
+                                <li><a href="">Slipper</a></li>
+                                <li><a href="">Fla+MLB</a></li>
+                                <li><a href="">Kid Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Backpacks</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li class="animation">
+                            <a href="" class="desktop-link">Sale</a>
+                            <ul class="subnav">
+                                <li><a href="">Vans</a></li>
+                                <li><a href="">Converse</a></li>
+                                <li><a href="">New Balance</a></li>
+                                <li><a href="">Puma</a></li>
+                                <li><a href="">Sale Other</a></li>
+                                <li><a href="">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Collections</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                    <div class="mobile-between-nav col c-6 m-6">
+                        <a href="">
+                            <img src="/assets/font/Icon/grebwhite.png" alt="">
+                        </a>
+                    </div>
+                    <!-- Begin:Search button -->
+                    <div class="mobile-right-nav col c-3 m-3">
+                        <a href="#" class="cart-mobile">
+                            <!-- <div class="icon-header">
+                                <img src="/assets/font/Icon/heart_white.png" alt="">
+                            </div> -->
+                            <img src="/assets/font/Icon/cart-best-white.png" alt="">
+                            <span>0</span>
+                        </a>
+                        <input type="checkbox" id="show-search">
+                        <label for="show-search" class="search-icon"><i class="icofont-search-1 icofont-1x"></i></label>
+                        <form action="" class="search-button-mobile col l-2-5">
+                            <table class="elementsnav">
+                                <tr>
+                                    <td>
+                                        <input class="search" type="text" placeholder="Tìm kiếm">
+                                    </td>
+                                    <td class="search-pc">
+                                        <button type="submit" class="go-icon">
+                                            <a href=""><i class="icon-search-1"></i></a>
+                                        </button>
+                                    </td>
+                                    <td class="search-mobile">
+                                        <button type="submit" class="go-icon">
+                                            <a href=""><i class="icofont-search-1 icofont-1x"></i></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <form action="" class="search-button col l-2-5">
+                        <table class="elementsnav">
+                            <tr>
+                                <td>
+                                    <input class="search" type="text" placeholder="Tìm kiếm">
+                                </td>
+                                <td class="search-pc">
+                                    <button type="submit" class="go-icon">
+                                        <a href=""><i class="icon-search-1"></i></a>
+                                    </button>
+                                </td>
+                                <td class="search-mobile">
+                                    <button type="submit" class="go-icon">
+                                        <a href=""><i class="icofont-search-1 icofont-1x"></i></a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <!-- End:Search button  -->
+            </div>
+        </div>
+        <!-- End: Nav -->
+        <div id="slider">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000013.jpg" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000014.jpg" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000015.jpg" style="width:100%">
+                </div>
+          
+                <!-- Next and previous buttons -->
+                <button class="owl-prev icon-angle-left" onclick="plusSlides(-1)"></button>
+                <button class="owl-next icon-angle-right" onclick="plusSlides(1)"></button>
+                
+            </div>
+        </div>
+        <div id="content">
+            <div class="order-product">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="breadcrumb-wrapp col l-12 c-12 m-12">
+                            <ul class="breadcrumb-cate">
+                                <li>
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a class="no-spacing" href="">Đơn hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="title col l-12 c-12 m-12" style="text-align: center; text-align: center;margin: 26px 0; font-family: 'AlternateGothicNo.3D';">
+                            <h2>ĐƠN HÀNG</h2>
+                        </div>
+                        <div class="col col-12" style="width: 100% ; margin-bottom: 22px;">
+                            <div class="my-account">
+                                <div class="dashboard">
+                                    <div class="recent-orders">
+                                        <div class="table-responsive tab-all">
+                                            <table class="table table-cart" id="my-orders-table">
+                                                <thead class="thead-default">
+                                                    <tr style="background-color: #ACACAC;">
+                                                        <th>Đơn hàng</th>
+                                                        <th>Ngày</th>
+                                                        <th>Địa chỉ</th>
+                                                        <th>Sản phẩm</th>
+                                                        <th>Tổng tiền</th>
+                                                        <th>Hình thức thanh toán</th>
+                                                        <th>Trạng thái</th>
+                                                    </tr>
+                                                </thead>
+                                                    <tr class="first odd" data-show="od102703140">
+                                                        <td><a href="/account/orders/4733006">102703140</a></td>
+                                                        <td>05-06-2021</td>
+                                                        <td>Số 26 ngõ 583 vũ tông phan</td>
+                                                        <td>
+                                                            <img class="product-oder--img"
+                                                                src="assets/img/All_Img/ia_300000076.jpg"
+                                                                alt="">
+                                                            <p>Converse 70s Hi Colorblock Citron Yellow - 36.5</p>
+                                                        </td>
+                                                        <td><span class="price">1,550,000 ₫</span></td>
+                                                        <td>
+                                                            <em>
+                                                                Thanh toán tại nhà </em>
+                                                        </td>
+                                                        <td>
+                                                            Mới</td>
+                                                    </tr>
+                                                    <tr class="first odd" data-show="od102702700">
+                                                        <td><a href="/account/orders/4733006">102702700</a></td>
+                                                        <td>05-06-2021</td>
+                                                        <td>Số 26 ngõ 583 vũ tông phan</td>
+                                                        <td>
+                                                            <img class="product-oder--img"
+                                                                src="assets/img/All_Img/ia_300000088.jpg"
+                                                                alt="">
+                                                            <p>Converse 70s Lowtop Colorblock Citron Pink - 36.5</p>
+                                                        </td>
+                                                        <td><span class="price">1,450,000 ₫</span></td>
+                                                        <td>
+                                                            <em>
+                                                                Thanh toán tại nhà </em>
+                                                        </td>
+                                                        <td>
+                                                            Mới</td>
+                                                    </tr>
+                                            </table>
+                                        </div>
+                                        <div class="paginate-pages pull-right page-account text-right col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/js/slider.js"></script>
+</html>

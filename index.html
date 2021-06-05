@@ -67,12 +67,13 @@
                 <div class="row ">
                     <div class="mobile-left-nav col c-3 m-3">
                         <input type="checkbox" id="show-menu">
-                        <label for="show-menu" class="menu-icon"><i class="icofont-navigation-menu icofont-2x"></i></label>
+                        <label for="show-menu" class="menu-icon"><i
+                                class="icofont-navigation-menu icofont-2x"></i></label>
                         <a href="#" class="user-mobile">
                             <!-- <div class="icon-header">
                                 <img src="/assets/font/Icon/heart_white.png" alt="">
                             </div> -->
-                                <img src="/assets/font/Icon/user-regular-white.png" alt="">
+                            <img src="/assets/font/Icon/user-regular-white.png" alt="">
                         </a>
                         <ul class="nav-mobile">
                             <li><a href="#">Home</a></li>
@@ -142,7 +143,7 @@
                     <div class="mobile-between-nav col c-6 m-6">
                         <a href="">
                             <img src="/assets/font/Icon/grebwhite.png" alt="">
-                            </a>
+                        </a>
                     </div>
                     <!-- Begin:Search button -->
                     <div class="mobile-right-nav col c-3 m-3">
@@ -150,7 +151,8 @@
                             <!-- <div class="icon-header">
                                 <img src="/assets/font/Icon/heart_white.png" alt="">
                             </div> -->
-                                <img src="/assets/font/Icon/cart-best-white.png" alt="">
+                            <img src="/assets/font/Icon/cart-best-white.png" alt="">
+                            <span>0</span>
                         </a>
                         <input type="checkbox" id="show-search">
                         <label for="show-search" class="search-icon"><i class="icofont-search-1 icofont-1x"></i></label>
@@ -199,14 +201,25 @@
         </div>
         <!-- End: Nav -->
         <div id="slider">
-            <div class="slider">
-                <div class="img-box">
-                    <img src="/assets/img/All_Img/ia_300000013.jpg"
-                        class="slider-img">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000013.jpg" style="width:100%">
                 </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000014.jpg" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000015.jpg" style="width:100%">
+                </div>
+          
+                <!-- Next and previous buttons -->
+                <button class="owl-prev icon-angle-left" onclick="plusSlides(-1)"></button>
+                <button class="owl-next icon-angle-right" onclick="plusSlides(1)"></button>
+                
             </div>
-            <button class="owl-prev icon-angle-left" onclick="prev()"></button>
-            <button class="owl-next icon-angle-right" onclick="next()"></button>
         </div>
         <div id="content">
                 <div class="new-product grid wide">

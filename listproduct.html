@@ -67,12 +67,13 @@
                 <div class="row ">
                     <div class="mobile-left-nav col c-3 m-3">
                         <input type="checkbox" id="show-menu">
-                        <label for="show-menu" class="menu-icon"><i class="icofont-navigation-menu icofont-2x"></i></label>
+                        <label for="show-menu" class="menu-icon"><i
+                                class="icofont-navigation-menu icofont-2x"></i></label>
                         <a href="#" class="user-mobile">
                             <!-- <div class="icon-header">
                                 <img src="/assets/font/Icon/heart_white.png" alt="">
                             </div> -->
-                                <img src="/assets/font/Icon/user-regular-white.png" alt="">
+                            <img src="/assets/font/Icon/user-regular-white.png" alt="">
                         </a>
                         <ul class="nav-mobile">
                             <li><a href="#">Home</a></li>
@@ -142,7 +143,7 @@
                     <div class="mobile-between-nav col c-6 m-6">
                         <a href="">
                             <img src="/assets/font/Icon/grebwhite.png" alt="">
-                            </a>
+                        </a>
                     </div>
                     <!-- Begin:Search button -->
                     <div class="mobile-right-nav col c-3 m-3">
@@ -150,7 +151,8 @@
                             <!-- <div class="icon-header">
                                 <img src="/assets/font/Icon/heart_white.png" alt="">
                             </div> -->
-                                <img src="/assets/font/Icon/cart-best-white.png" alt="">
+                            <img src="/assets/font/Icon/cart-best-white.png" alt="">
+                            <span>0</span>
                         </a>
                         <input type="checkbox" id="show-search">
                         <label for="show-search" class="search-icon"><i class="icofont-search-1 icofont-1x"></i></label>
@@ -199,14 +201,25 @@
         </div>
         <!-- End: Nav -->
         <div id="slider">
-            <div class="slider">
-                <div class="img-box">
-                    <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/ia_300000013.jpg"
-                        class="slider-img">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000013.jpg" style="width:100%">
                 </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000014.jpg" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                  <img src="/assets/img/All_Img/ia_300000015.jpg" style="width:100%">
+                </div>
+          
+                <!-- Next and previous buttons -->
+                <button class="owl-prev icon-angle-left" onclick="plusSlides(-1)"></button>
+                <button class="owl-next icon-angle-right" onclick="plusSlides(1)"></button>
+                
             </div>
-            <button class="owl-prev icon-angle-left" onclick="prev()"></button>
-            <button class="owl-next icon-angle-right" onclick="next()"></button>
         </div>
         <div id="content">
             <div class="category-product">
@@ -222,135 +235,456 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="title col l-12 ">
+                        <div class="title col l-12 c-12 ">
                             <h2>SNEAKERS</h2>
                         </div>
                         <div class="left-content col l-3">
                             <h3 class="category__heading">
                                 BỘ LỌC
                             </h3>
-                            <li>
+                            <li id="filter-product">
                                 <a href="" class="left-product-link">SẢN PHẨM</a>
                                 <input type="checkbox" id="show-product">
                                 <label class=" label" for="show-product"></label>
                                 <ul class="subnav">
-                                    <li><a href="">SLIPPERS</a>
-                                        <input type="checkbox" id="show-product-slippers">
-                                        <label class=" label" for="show-product-slippers"></label>
-                                    <ul class="subnav">
-                                        <li><a href="">GUESS</a></li>
-                                        <li><a href="">CROSS</a></li>
-                                        <li><a href="">FILA</a></li>
-                                        <li><a href="">PUMA</a></li>
-                                    </ul>
-                                    </li>
-                                    <li><a href="">SANDALS</a>
-
-                                    </li>
-                                    <li><a href="">SNEAKERS</a>
-                                        <input type="checkbox" id="show-product-sneakers">
-                                        <label class=" label" for="show-product-sneakers"></label>
-                                    <ul class="subnav">
-                                        <li><a href="">MLB</a></li>
-                                        <li><a href="">KID SHOES</a></li>
-                                        <li><a href="">CONVERSE</a></li>
-                                        <li><a href="">VANS</a></li>
-                                        <li><a href="">PUMA</a></li>
-                                        <li><a href="">REEBOK</a></li>
-                                        <li><a href="">NEW BALANCE</a></li>
-                                        <li><a href="">FILA</a></li>
-                                        <li><a href="">TIMBERLAND</a></li>
-                                    </ul>
-                                    </li>
-                                    <li><a href="">BACKPACKS</a>
-                                        <input type="checkbox" id="show-product-backpacks">
-                                        <label class=" label" for="show-product-backpacks"></label>
-                                    <ul class="subnav">
-                                        <li><a href="">KANKEN</a></li>
-                                        <li><a href="">VANS</a></li>
-                                        <li><a href="">JANSPORT</a></li>
-                                        <li><a href="">BURTON</a></li>
-                                        <li><a href="">PUMA</a></li>
-                                        <li><a href="">REEBOK</a></li>
-                                        <li><a href="">NEW BALANCE</a></li>
-                                        <li><a href="">FILA</a></li>
-                                        <li><a href="">TIMBERLAND</a></li>
-                                    </ul>
-                                    </li>
-                                    <li><a href="">ACCESSORIES</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="filter-product-1">
+                                        <label class=" label" for="filter-product-1"></label>
+                                        <a href="">SLIPPERS</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="filter-product-2">
+                                        <label class=" label" for="filter-product-2"></label>
+                                        <a href="">SANDALS</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="filter-product-3">
+                                        <label class=" label" for="filter-product-3"></label>
+                                        <a href="">SNEAKERS</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="filter-product-4">
+                                        <label class=" label" for="filter-product-4"></label>
+                                        <a href="">BACKPACKS</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="filter-product-5">
+                                        <label class=" label" for="filter-product-5"></label>
+                                        <a href="">ACCESSORIES</a></li>
+                                </ul>
+                            </li>
+                            <li id="trademark-product">
+                                <a href="" class="left-product-link">THƯƠNG HIỆU</a>
+                                <input type="checkbox" id="show-trademark-product">
+                                <label class=" label" for="show-trademark-product"></label>
+                                <ul class="subnav">
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="trademark-product-1">
+                                        <label class=" label" for="trademark-product-1"></label>
+                                        <a href="">Converse</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="trademark-product-2">
+                                        <label class=" label" for="trademark-product-2"></label>
+                                        <a href="">Vans</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="trademark-product-3">
+                                        <label class=" label" for="trademark-product-3"></label>
+                                        <a href="">MLB</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="trademark-product-4">
+                                        <label class=" label" for="trademark-product-4"></label>
+                                        <a href="">FILA</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="trademark-product-5">
+                                        <label class=" label" for="trademark-product-5"></label>
+                                        <a href="">Puma</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="trademark-product-6">
+                                        <label class=" label" for="trademark-product-6"></label>
+                                        <a href="">New Balance</a></li>
+                                    <li>
+                                        <input type="checkbox" class="regular-checkbox" id="trademark-product-7">
+                                        <label class=" label" for="trademark-product-7"></label>
+                                        <a href="">AKCL</a></li>
                                 </ul>
                             </li>
                             <li id="price-product">
-                                <a href="" class="left-product-link">LỌC THEO GIÁ</a>
+                                <a href="" class="left-product-link">GIÁ</a>
                                 <input type="checkbox" id="show-price-product">
                                 <label class=" label" for="show-price-product"></label>
                                 <ul class="subnav">
                                     <li>
-                                        <input type="checkbox" id="price-product-s">
-                                        <label class=" label" for="show-price-product"></label>
+                                        <input type="checkbox" class="regular-checkbox" id="price-product-s">
+                                        <label class=" label" for="price-product-s"></label>
                                         <a href="">50.000 VNĐ - 200.000 VNĐ</a></li>
                                     <li>
-                                        <input type="checkbox" id="price-product-m">
-                                        <label class=" label" for="show-price-product"></label>
+                                        <input type="checkbox" class="regular-checkbox" id="price-product-m">
+                                        <label class=" label" for="price-product-m"></label>
                                         <a href="">200.000 VNĐ - 600.000 VNĐ</a></li>
                                     <li>
-                                        <input type="checkbox" id="price-product-l">
-                                        <label class=" label" for="show-price-product"></label>
+                                        <input type="checkbox" class="regular-checkbox" id="price-product-l">
+                                        <label class=" label" for="price-product-l"></label>
                                         <a href="">600.000 VNĐ - 1.200.000 VNĐ</a></li>
                                     <li>
-                                        <input type="checkbox" id="price-product-xl">
-                                        <label class=" label" for="show-price-product"></label>
+                                        <input type="checkbox" class="regular-checkbox" id="price-product-xl">
+                                        <label class=" label" for="price-product-xl"></label>
                                         <a href="">1.200.000 VNĐ - 2.000.000 VNĐ</a></li>
+                                </ul>
+                            </li>
+                            <li id="size-product">
+                                <a href="" class="left-product-link">KÍCH THƯỚC</a>
+                                <input type="checkbox" id="show-size-product">
+                                <label class=" label" for="show-size-product"></label>
+                                <ul class="check-box-list">
+                                    <li class="filter-item active">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            22 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            23.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            24.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            24 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            25.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            25 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            26.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            27.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            28 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            29 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            30 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            32 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            34.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            34 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            35.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            35 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            36 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            36.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            37.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            37 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            38.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            38 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            39.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            39 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            40.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            40 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            41.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            41 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            42.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            42 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            43.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            43 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            44.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            44 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            45.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            45 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            46 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            34,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            41,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            36,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            39,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            38,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            40,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            35,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            42,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            44,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            37,5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            31 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            31.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            33 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            30.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            29.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            32.5 </label>
+                                    </li>
+                                    <li class="filter-item">
+                                        <input type="checkbox">
+                                        <label>
+                                            <span class="button tp_button"></span>
+                                            19 </label>
+                                    </li>
                                 </ul>
                             </li>
                         </div>
                         <div class="right-content col l-9">
                             <div class="list-product row">
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
-                                    <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
-                                        <div class="goodsli-discount">
-                                            <img src="/assets/font/Icon/Path 24.png" alt="">
-                                            <div>
-                                                <h1>62 %</h1>
-                                                <h1>off</h1>
+                                <div class="top-right-content col c-12 l-12">
+                                    <div class="row sm-block">
+                                        <div class="find-product col l-8 c-7 m-6 sm-12">
+                                            <p class="resultCate">Tìm thấy 
+                                                <span class="countCate">266</span>
+                                                 sản phẩm</p>
+                                        </div>
+                                        <div class="sort-by col l-4 c-5 m-6 sm-12">
+                                            <div class="sort-by-right">
+                                                <label for="grid-sort-header">Sắp xếp theo:</label>
+                                                <select name="grid-sort-header" id="grid-sort-header">
+                                                    <option value="latest">Mới nhất</option>
+                                                    <option value="priceAsc">Giá tăng dần</option>
+                                                    <option value="priceDesc">Giá giảm dần</option>
+                                                    <option value="discount">Khuyến mãi</option>
+                                                    <option value="hot">Hot nhất</option>
+                                                </select>
                                             </div>
                                         </div>
-                                        <div class="button-add">
-                                            <button onclick="toggleproduct();">
-                                                <span>
-                                                    <h1>Mua ngay</h1>
-                                                </span>
-                                            </button>
-                                            <button title="Xem chi tiết" class="action tp_button"
-                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
-                                                <span>
-                                                    <h1>Xem chi tiết</h1>
-                                                </span>
-                                            </button>
-                                        </div>
                                     </div>
-                                    <div class="swatch__list">
-                                        <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
-                                        <h1>Puma Slim Softfoam</h1>
-                                    </a>
-                                    <span class="special-price">
-                                        <span class="tp_product_price">
-                                            <h1>299,000 <sup>đ</sup></h1>
-                                        </span>
-                                        <span>
-                                            <h1>800,000<sup>đ</sup></h1>
-                                        </span>
-                                    </span>
                                 </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -374,11 +708,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -389,10 +722,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -416,11 +749,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -431,10 +763,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -458,11 +790,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -473,10 +804,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -500,11 +831,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -515,10 +845,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -542,11 +872,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -557,10 +886,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -584,11 +913,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -599,10 +927,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -626,11 +954,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -641,10 +968,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -668,11 +995,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -683,10 +1009,10 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
-                                </div>
-                                <div class="product-item col l-4 c-6 m-6 sm-6">
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
                                     <div class="product-image">
-                                        <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         <div class="goodsli-discount">
                                             <img src="/assets/font/Icon/Path 24.png" alt="">
                                             <div>
@@ -710,11 +1036,10 @@
                                     </div>
                                     <div class="swatch__list">
                                         <a class="color-item">
-                                            <img src="/assets/img/↔_GREY.B_-_Original_Sneakers_and_Apparels/Sale1.jpg" alt="">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html"
-                                        class="d-block pt-2 tp_product_name">
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
                                         <h1>Puma Slim Softfoam</h1>
                                     </a>
                                     <span class="special-price">
@@ -725,6 +1050,98 @@
                                             <h1>800,000<sup>đ</sup></h1>
                                         </span>
                                     </span>
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>                        
+                                <div class="product-item col l-4 c-4 m-4 sm-6">
+                                    <div class="product-image">
+                                        <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        <div class="goodsli-discount">
+                                            <img src="/assets/font/Icon/Path 24.png" alt="">
+                                            <div>
+                                                <h1>62 %</h1>
+                                                <h1>off</h1>
+                                            </div>
+                                        </div>
+                                        <div class="button-add">
+                                            <button onclick="toggleproduct();">
+                                                <span>
+                                                    <h1>Mua ngay</h1>
+                                                </span>
+                                            </button>
+                                            <button title="Xem chi tiết" class="action tp_button"
+                                                onclick="location.href='/puma-slim-softfoam-leather-black-p12816578.html'">
+                                                <span>
+                                                    <h1>Xem chi tiết</h1>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swatch__list">
+                                        <a class="color-item">
+                                            <img src="/assets/img/All_Img/Sale1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="/puma-slim-softfoam-leather-black-p12816578.html" class="d-block pt-2 tp_product_name">
+                                        <h1>Puma Slim Softfoam</h1>
+                                    </a>
+                                    <span class="special-price">
+                                        <span class="tp_product_price">
+                                            <h1>299,000 <sup>đ</sup></h1>
+                                        </span>
+                                        <span>
+                                            <h1>800,000<sup>đ</sup></h1>
+                                        </span>
+                                    </span>
+                                </div>                        
+                                <div class="bottom-right-content col c-12 l-12">
+                                    <div class="pagination">
+                                        <a class="disabled" href="#">&laquo;</a>
+                                        <a class="active" href="#">1</a>
+                                        <a  href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">&raquo;</a>
+                                      </div>
                                 </div>
                             </div>
                         </div>

@@ -49,6 +49,12 @@ button:focus {
 button:hover{
     cursor: pointer;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 sup{
     text-decoration: underline;
 }
@@ -214,7 +220,6 @@ input[type=number] {
     height: 58px;
     background-color: black;
     z-index: 1;
-    overflow: hidden;
 }
 #nav .nav{
     height:42px;
@@ -282,6 +287,7 @@ input[type=number] {
 }
 #nav > .grid > .row > .nav > li > a {
     line-height: 42px;
+    padding: 12px 0;
 }
 #nav > .grid > .row > .nav > li > label {
     line-height: 42px;
@@ -400,7 +406,7 @@ input[type=number] {
     height: 30px;
 }
 #nav .search-button{
-    margin-top: 0.5%;
+    margin-top: 0.69%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -431,6 +437,7 @@ input{
 }
 #nav .search-pc{
     display: block;
+    margin-right: 5px;
 }
 #nav .search-mobile{
     display: none;
@@ -1569,6 +1576,8 @@ button{
 }
 .category-product .title {
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
 .category-product .title h2{
     letter-spacing: 5px;
@@ -1577,18 +1586,38 @@ button{
 input[type="checkbox"] {
     display: none;
 }
-#price-product >ul >li > input[type="checkbox"] {
-    display: block ;
-}
 .left-content li{
     position: relative;
+}
+ .left-content > li > a{
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.category__heading{
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 23px;
+}
+.top-right-content{
+    margin-bottom: 11px;
+}
+.top-right-content .find-product{
+    text-align: end;
+}
+.top-right-content .find-product .resultCate{
+    line-height:33px;
 }
 .left-content .subnav{
     position: static;
     opacity: 1;
     visibility: visible;
     background: none;
-    max-height: 0px;
+    max-height: 100vh;
     overflow: hidden;
     display: block;
     transition: all 0.3s ease;
@@ -1596,22 +1625,151 @@ input[type="checkbox"] {
 .left-content #show-product:checked ~ .subnav,
 .left-content #show-product-slippers:checked ~ .subnav,
 .left-content #show-product-backpacks:checked ~ .subnav,
+.left-content #show-trademark-product:checked ~ .subnav,
 .left-content #show-price-product:checked ~ .subnav,
 .left-content #show-product-sneakers:checked ~ .subnav{
-      max-height: 100vh;
+    max-height: 0px;
   }
-  .left-content > li > .label::before {
-    content: "+";
-    position: absolute;
-    right: 0;
-    padding: 0 5px;
-}
-.left-content label.minus::before {
+.left-content > li > .label::before {
     content: "-";
+    position: absolute;
     justify-content: center;
     top: 0;
     right: 2px;
+    padding: 0 5px;
 }
+.left-content .subnav li{
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 5px;
+	display: inline-block;
+	position: relative;
+    margin-right: 9px;
+}
+.regular-checkbox:checked + label:after {
+    content: '\2714';
+    font-size: 13px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 4px;
+    color: #ffffff;
+    width: 67%;
+    border-radius: 5px;
+    height: 17px;
+    border: 1px solid #185137;
+    background-color: #185137;
+}
+.left-content a{
+    color: #000;
+}
+.left-content > #filter-product > label.minus::before ,
+.left-content > #price-product > label.minus::before ,
+.left-content > #size-product > label.minus::before ,
+.left-content > #trademark-product > label.minus::before {
+    content: "+";
+    position: absolute;
+    right: 0;
+}
+.right-content .sort-by{
+    margin: 0 0 0 auto;
+    font-size: 14px;
+}
+
+.right-content .sort-by .sort-by-right{
+    margin: 0 0 0 auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.right-content .resultCate .countCate {
+    font-weight: 600;
+}
+.right-content .sort-by label{
+    margin: 0 0 0 auto;
+    padding: 0;
+}
+.right-content #grid-sort-header{
+    margin: 0 0 0 auto;
+    border: none;
+    background: 0 0;
+    max-width: 110px;
+}
+.left-content #show-size-product:checked ~ .check-box-list{
+    display: block;
+    max-height: 0;
+}
+#size-product .check-box-list{
+    overflow: auto;
+    max-height: 192px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.check-box-list >li {
+    cursor: pointer;
+}
+ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #185137;
+}
+ul::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+ul::-webkit-scrollbar {
+    width: 8px;
+}
+.filter-item.active{
+    background: #185137;
+    color: #fff;
+}
+#size-product .check-box-list li {
+    line-height: 48px;
+    margin-bottom: 0;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    width: 33.33%;
+    height: 48px;
+    text-align: center;
+    font-size: 18px;
+}
+.bottom-right-content{
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: #111;
+    float: left;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background: #185137;
+    color: white;
+  }
+  .pagination a.disabled {
+    display: none;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
 /* .item-a,
 .item-b,
 .item-c,
@@ -1978,4 +2136,36 @@ input[type="checkbox"] {
     padding: 0 0 5px;
     border: none;
     border-bottom: 1px #545454 solid;
+}
+/* ////////////////ĐƠN HÀNG */
+.table.table-cart>tbody>tr>td ,
+.table.table-cart>thead>tr>th {
+    line-height: 1.42857143;
+    border: 1px solid #ddd;
+    padding:8px 3px;
+    vertical-align: inherit;
+    text-align: center;
+}
+.order-product{
+    font-family: 'Helvetica';
+}
+.table.table-cart{
+    width: 100%;
+}
+.table.table-cart img{
+    max-width: 168px;
+}
+.table.table-cart>thead>tr>th {
+    line-height: 1.42857143;
+    border: 1px solid #ddd;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.first.odd {
+    font-size: 14px;
+}
+.first.odd a{
+    color:#111;
 }
